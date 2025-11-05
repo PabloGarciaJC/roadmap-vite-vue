@@ -22,15 +22,18 @@ export default {
     return {
       links: [
         { to: "/introduccion", label: "Introducción a Vue", icon: 'rocket' },
+        { to: "/instalacion", label: "Instalación y Vite", icon: 'download' },
+        { to: "/estructura", label: "Estructura del proyecto", icon: 'folder-open' },
         { to: "/componentes", label: "Componentes", icon: 'puzzle-piece' },
-        { to: "/props", label: "Props", icon: 'box' },
+        { to: "/props", label: "Props y Comunicación", icon: 'box' },
         { to: "/estado", label: "Reactive / Ref", icon: 'bolt' },
         { to: "/composicion", label: "Composition API", icon: 'brain' },
         { to: "/directivas", label: "Directivas", icon: 'tools' },
-        { to: "/eventos", label: "Eventos", icon: 'bullseye' },
+        { to: "/eventos", label: "Eventos y Métodos", icon: 'bullseye' },
         { to: "/routers", label: "Vue Router", icon: 'route' },
         { to: "/pinia", label: "Pinia (estado global)", icon: 'broadcast-tower' },
-        { to: "/optimizar", label: "Optimización avanzada", icon: 'cog' }
+        { to: "/apis", label: "Consumo de APIs", icon: 'server' },
+        { to: "/optimizar", label: "Optimización y buenas prácticas", icon: 'cog' }
       ]
     };
   }
