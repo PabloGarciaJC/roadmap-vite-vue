@@ -27,10 +27,7 @@ export default {
         { to: "/templates", label: "Template Syntax", icon: "code" },
         { to: "/componentes", label: "Componentes", icon: "puzzle-piece" },
         { to: "/props", label: "Props", icon: "box" },
-
-
-        
-        { to: "/eventos", label: "Emit / Eventos (hijo → padre)", icon: "bullseye",},
+        { to: "/eventos", label: "Emit / Eventos", icon: "bullseye",},
 
         {
           to: "/estado",
