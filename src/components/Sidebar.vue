@@ -29,9 +29,8 @@ export default {
         { to: "/props", label: "Props", icon: "box" },
         { to: "/eventos", label: "Emit / Eventos", icon: "bullseye",},
         { to: "/estado", label: "Estado Reactivo", icon: "bolt",},
-
-
         { to: "/computed", label: "Computed + Watch", icon: "brain" },
+        
         { to: "/lifecycle", label: "Ciclo de Vida", icon: "clock" },
 
         { to: "/composicion", label: "Composition API", icon: "layer-group" },

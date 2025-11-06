@@ -8,6 +8,7 @@ import Componentes from './components/Componentes.vue'
 import Props from './components/Props.vue'
 import Eventos from './components/Eventos.vue'
 import Estado from './components/Estado.vue'
+import Computed from './components/Computed.vue'
 
 const routes = [
   { path: '/', redirect: '/introduccion' },
@@ -18,6 +19,7 @@ const routes = [
   { path: '/props', component: Props },
   { path: '/eventos', component: Eventos },
   { path: '/estado', component: Estado },
+  { path: '/computed', component: Computed },
 ]
 
 const router = createRouter({
