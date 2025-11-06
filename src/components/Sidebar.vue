@@ -27,33 +27,19 @@ export default {
         { to: "/templates", label: "Template Syntax", icon: "code" },
         { to: "/componentes", label: "Componentes", icon: "puzzle-piece" },
         { to: "/props", label: "Props", icon: "box" },
-        { to: "/eventos", label: "Emit / Eventos", icon: "bullseye",},
-        { to: "/estado", label: "Estado Reactivo", icon: "bolt",},
+        { to: "/eventos", label: "Emit / Eventos", icon: "bullseye" },
+        { to: "/estado", label: "Estado Reactivo", icon: "bolt" },
         { to: "/computed", label: "Computed + Watch", icon: "brain" },
-        
         { to: "/lifecycle", label: "Ciclo de Vida", icon: "clock" },
-
         { to: "/composicion", label: "Composition API", icon: "layer-group" },
-        {
-          to: "/composables",
-          label: "Composables (Reutilizar lógica)",
-          icon: "recycle",
-        },
-
+        { to: "/composables", label: "Composables (Reutilizar lógica)", icon: "recycle" },
         { to: "/routers", label: "Vue Router", icon: "route" },
-        {
-          to: "/pinia",
-          label: "Pinia (Estado Global)",
-          icon: "broadcast-tower",
-        },
+
+        { to: "/pinia", label: "Pinia (Estado Global)", icon: "broadcast-tower" },
         { to: "/apis", label: "Consumo de APIs / Axios", icon: "cloud" },
 
         { to: "/slots", label: "Slots & Scoped Slots", icon: "object-group" },
-        {
-          to: "/optimizar",
-          label: "Optimización & Buenas Prácticas",
-          icon: "cog",
-        },
+        { to: "/optimizar", label: "Optimización & Buenas Prácticas", icon: "cog" },
       ],
     };
   },
