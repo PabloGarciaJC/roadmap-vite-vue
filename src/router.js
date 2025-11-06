@@ -13,6 +13,7 @@ import Lifecycle from './components/Lifecycle.vue'
 import CompositionAPI from './components/CompositionAPI.vue'
 import Routes from './components/Routes.vue'
 import Pinia from './components/Pinia.vue'
+import Apis from './components/Apis.vue'
 
 const routes = [
   { path: '/', redirect: '/introduccion' },
@@ -28,6 +29,7 @@ const routes = [
   { path: '/compositionAPI', component: CompositionAPI },
   { path: '/routers', component: Routes },
   { path: '/pinia', component: Pinia },
+  { path: '/apis', component: Apis },
 ]
 
 const router = createRouter({
