@@ -34,10 +34,8 @@ export default {
         { to: "/composicion", label: "Composition API", icon: "layer-group" },
         { to: "/composables", label: "Composables (Reutilizar lógica)", icon: "recycle" },
         { to: "/routers", label: "Vue Router", icon: "route" },
-
         { to: "/pinia", label: "Pinia (Estado Global)", icon: "broadcast-tower" },
         { to: "/apis", label: "Consumo de APIs / Axios", icon: "cloud" },
-
         { to: "/slots", label: "Slots & Scoped Slots", icon: "object-group" },
         { to: "/optimizar", label: "Optimización & Buenas Prácticas", icon: "cog" },
       ],
