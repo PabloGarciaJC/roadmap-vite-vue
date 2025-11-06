@@ -5,7 +5,7 @@
     <div class="header">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="Vue Logo" class="vue-logo"/>
       <h1 class="title">
-        <font-awesome-icon :icon="['fas', 'rocket']" class="icon"/> Roadmap Vue 3 + Vite
+        <font-awesome-icon :icon="['fas', 'rocket']" class="icon"/> Roadmap Vue + Vite
       </h1>
     </div>
 
@@ -39,44 +39,6 @@
         <li>Hot Module Replacement (HMR) para ver cambios en tiempo real.</li>
         <li>Compilación optimizada para producción automáticamente.</li>
       </ul>
-    </div>
-
-    <!-- Instalación paso a paso -->
-    <div class="card card-info">
-      <h2 class="subtitle">
-        <font-awesome-icon :icon="['fas', 'download']" class="icon"/> Cómo instalar Vue con Vite
-      </h2>
-      <ol>
-        <li>Asegúrate de tener <strong>Node.js 16+</strong> y <strong>NPM</strong> o <strong>Yarn</strong> instalados.</li>
-        <li>Ejecuta el siguiente comando para crear un nuevo proyecto Vue con Vite:</li>
-      </ol>
-      <pre class="code-block">
-<code>npm create vite@latest my-vue-app</code>
-      </pre>
-      <p>
-        Durante la instalación, se te pedirá seleccionar el framework: elige <strong>Vue</strong> y luego el template que prefieras (JavaScript o TypeScript).
-      </p>
-      <ol start="3">
-        <li>Ingresa a la carpeta del proyecto:</li>
-      </ol>
-      <pre class="code-block">
-<code>cd my-vue-app</code>
-      </pre>
-      <ol start="4">
-        <li>Instala las dependencias:</li>
-      </ol>
-      <pre class="code-block">
-<code>npm install</code>
-      </pre>
-      <ol start="5">
-        <li>Levanta el servidor de desarrollo:</li>
-      </ol>
-      <pre class="code-block">
-<code>npm run dev</code>
-      </pre>
-      <p>
-        Una vez levantado, Vite mostrará una URL (normalmente <code>http://localhost:5173</code>) donde podrás ver tu aplicación en acción.
-      </p>
     </div>
 
     <!-- Estructura de proyecto -->
@@ -119,37 +81,5 @@
       </ul>
     </div>
 
-    <!-- Ejemplo de componente -->
-    <div class="card card-info">
-      <h2 class="subtitle">
-        <font-awesome-icon :icon="['fas', 'code']" class="icon"/> Ejemplo de componente Vue
-      </h2>
-      <pre class="code-block">
-<code>&lt;template&gt;
-  &lt;button @click="count++"&gt;Has hecho clic {{ count }} veces&lt;/button&gt;
-&lt;/template&gt;
-
-&lt;script&gt;
-import { ref } from 'vue';
-
-export default {
-  setup() {
-    const count = ref(0);
-    return { count };
-  }
-}
-&lt;/script&gt;</code>
-      </pre>
-    </div>
-
   </div>
 </template>
-
-<script>
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-
-export default {
-  name: "RoadmapVueVite",
-  components: { FontAwesomeIcon }
-};
-</script>
