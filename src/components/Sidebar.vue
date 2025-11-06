@@ -28,12 +28,9 @@ export default {
         { to: "/componentes", label: "Componentes", icon: "puzzle-piece" },
         { to: "/props", label: "Props", icon: "box" },
         { to: "/eventos", label: "Emit / Eventos", icon: "bullseye",},
+        { to: "/estado", label: "Estado Reactivo", icon: "bolt",},
 
-        {
-          to: "/estado",
-          label: "Estado Reactivo (ref & reactive)",
-          icon: "bolt",
-        },
+
         { to: "/computed", label: "Computed + Watch", icon: "brain" },
         { to: "/lifecycle", label: "Ciclo de Vida", icon: "clock" },
 
