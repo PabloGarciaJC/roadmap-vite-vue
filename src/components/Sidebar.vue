@@ -1,10 +1,12 @@
 <template>
   <div :class="['sidebar', isOpen ? 'open' : '']">
-    <h2 class="sidebar-title">Roadmap Vue + Vite</h2>
+    <div class="sidebar-header">
+      <h2 class="sidebar-title">Roadmap Vue + Vite</h2>
+      <button class="close-btn" @click="$emit('closeSidebar')">✕</button>
+    </div>
     <ul class="sidebar-links">
       <li v-for="link in links" :key="link.to">
-        <!-- Usando router-link en lugar de <a> -->
-        <router-link :to="link.to" class="sidebar-link">
+        <router-link :to="link.to" class="sidebar-link" @click="$emit('closeSidebar')">
           <font-awesome-icon :icon="['fas', link.icon]" class="icon" />
           {{ link.label }}
         </router-link>
@@ -14,11 +16,14 @@
 </template>
 
 <script>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 export default {
   name: "Sidebar",
   props: {
     isOpen: { type: Boolean, default: true },
   },
+  components: { FontAwesomeIcon },
   data() {
     return {
       links: [
@@ -32,13 +37,13 @@ export default {
         { to: "/computed", label: "Computed + Watch", icon: "brain" },
         { to: "/lifecycle", label: "Ciclo de Vida", icon: "clock" },
         { to: "/compositionAPI", label: "Composition API", icon: "layer-group" },
-        { to: "/routers", label: "Router", icon: "route" },
-        { to: "/pinia", label: "Pinia (Estado Global)", icon: "broadcast-tower" },
         { to: "/apis", label: "Consumo de APIs / Axios", icon: "cloud" },
         { to: "/slots", label: "Slots & Scoped Slots", icon: "object-group" },
-        { to: "/optimizar", label: "Optimización & Buenas Prácticas", icon: "cog" },
-      ],
+        { to: "/routers", label: "Router", icon: "route" },
+        { to: "/pinia", label: "Pinia (Estado Global)", icon: "broadcast-tower" },
+        { to: "/optimizar", label: "Optimización & Buenas Prácticas", icon: "cog" }
+      ]
     };
-  },
+  }
 };
 </script>

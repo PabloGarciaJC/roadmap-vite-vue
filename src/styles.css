@@ -11,8 +11,8 @@ html {
 
 body {
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
-  background: #f7f9f8; /* Fondo muy suave */
-  color: #2f3d4a;       /* Texto oscuro neutro */
+  background: #f7f9f8;
+  color: #2f3d4a;
   line-height: 1.6;
   padding-bottom: 3rem;
 }
@@ -30,7 +30,7 @@ body {
 
 @media (max-width: 767px) {
   .main {
-    padding: 0px;
+    padding: 0;
   }
 }
 
@@ -50,13 +50,38 @@ body {
   transition: all 0.3s ease;
 }
 
-.sidebar-title {
+/* ===== SIDEBAR HEADER ===== */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.sidebar-header .sidebar-title {
   font-size: 1.35rem;
   font-weight: 700;
   color: #2f3d4a;
-  margin-bottom: 1.2rem;
 }
 
+/* Close button para sidebar */
+.close-btn {
+  display: none;
+  background: #e6f3ee;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #3fae84;
+  padding: 0.3rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #c4e5d2;
+}
+
+/* ===== SIDEBAR LINKS ===== */
 .sidebar-links {
   list-style: none;
   display: flex;
@@ -77,13 +102,64 @@ body {
 }
 
 .sidebar-link:hover {
-  background: #e6f3ee;   /* Verde muy suave */
-  color: #3fae84;         /* Verde agradable */
+  background: #e6f3ee;
+  color: #3fae84;
 }
 
 .sidebar-link .icon {
   font-size: 1.15rem;
   color: #3fae84;
+}
+
+/* ===== HAMBURGUESA ===== */
+.hamburger-btn {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1001;
+  background: #6bc4a6;
+  border: none;
+  padding: 0.55rem 0.7rem;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hamburger-btn:hover {
+  background: #4e9e80;
+}
+
+/* Overlay */
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.sidebar.open ~ .overlay {
+  display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+  .hamburger-btn { display: block; }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    z-index: 1001;
+  }
+
+  .sidebar.open { transform: translateX(0); }
+  .close-btn { display: inline-block; }
 }
 
 /* ===== CONTENEDOR ===== */
@@ -107,29 +183,15 @@ body {
   transition: opacity 0.3s ease;
 }
 
-.vue-logo:hover {
-  opacity: 1;
-}
+.vue-logo:hover { opacity: 1; }
 
-.title {
-  font-size: 1.9rem;
-  font-weight: 700;
-  color: #2f3d4a;
-}
+.title { font-size: 1.9rem; font-weight: 700; color: #2f3d4a; }
 
-/* ===== SUBTÍTULOS ===== */
 .subtitle {
   font-size: 1.25rem;
   font-weight: 600;
   margin-bottom: 0.8rem;
-  color: #6bc4a6; /* Verde pastel más agradable */
-}
-
-/* ===== ICONOS ===== */
-.icon {
   color: #6bc4a6;
-  font-size: 1.2em;
-  margin-right: 8px;
 }
 
 /* ===== TARJETAS ===== */
@@ -148,8 +210,8 @@ body {
 }
 
 .card-info {
-  border-left: 5px solid #7fc8ad; /* Verde más suave */
-  background: #f0faf5; /* Verde pastel muy claro */
+  border-left: 5px solid #7fc8ad;
+  background: #f0faf5;
 }
 
 .card-neutral {
@@ -174,9 +236,9 @@ li::marker {
 
 /* ===== BLOQUES DE CÓDIGO ===== */
 .code-block {
-  background: #eef7f3;       /* Verde muy suave */
-  border: 1px solid #d7ece4; /* Borde sutil */
-  color: #2f3d4a;            /* Texto oscuro neutro */
+  background: #eef7f3;
+  border: 1px solid #d7ece4;
+  color: #2f3d4a;
   padding: 1rem 1.2rem;
   border-radius: 12px;
   font-family: "Fira Code", monospace;
@@ -198,12 +260,12 @@ li::marker {
 }
 
 .table th {
-  background: #7fc8ad; /* Verde suave */
+  background: #7fc8ad;
   color: #ffffff;
 }
 
 .table tr:nth-child(even) {
-  background: #f4faf5; /* Verde muy claro */
+  background: #f4faf5;
 }
 
 /* ===== CODE INLINE ===== */
