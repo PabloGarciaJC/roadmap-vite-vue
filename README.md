@@ -68,5 +68,5 @@ Este proyecto está enfocado en reforzar conocimientos esenciales de **Vue 3 + V
 | **Twitter**  | Proyectos, pensamientos y actualizaciones.                | [Presiona aquí](https://x.com/PabloGarciaJC?t=lct1gxvE8DkqAr8dgxrHIw&s=09)   |
 
 ---
-> _"El buen manejo de tus finanzas hoy construye la seguridad del mañana."_
 
+> _"El buen manejo de tus finanzas hoy construye la seguridad del mañana."
