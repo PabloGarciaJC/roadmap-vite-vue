@@ -12,6 +12,7 @@ import Computed from './components/Computed.vue'
 import Lifecycle from './components/Lifecycle.vue'
 import CompositionAPI from './components/CompositionAPI.vue'
 import Routes from './components/Routes.vue'
+import Pinia from './components/Pinia.vue'
 
 const routes = [
   { path: '/', redirect: '/introduccion' },
@@ -26,6 +27,7 @@ const routes = [
   { path: '/lifecycle', component: Lifecycle },
   { path: '/compositionAPI', component: CompositionAPI },
   { path: '/routers', component: Routes },
+  { path: '/pinia', component: Pinia },
 ]
 
 const router = createRouter({
