@@ -11,6 +11,7 @@ import Estado from './components/Estado.vue'
 import Computed from './components/Computed.vue'
 import Lifecycle from './components/Lifecycle.vue'
 import CompositionAPI from './components/CompositionAPI.vue'
+import Routes from './components/Routes.vue'
 
 const routes = [
   { path: '/', redirect: '/introduccion' },
@@ -24,6 +25,7 @@ const routes = [
   { path: '/computed', component: Computed },
   { path: '/lifecycle', component: Lifecycle },
   { path: '/compositionAPI', component: CompositionAPI },
+  { path: '/routers', component: Routes },
 ]
 
 const router = createRouter({
