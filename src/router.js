@@ -10,6 +10,7 @@ import Eventos from './components/Eventos.vue'
 import Estado from './components/Estado.vue'
 import Computed from './components/Computed.vue'
 import Lifecycle from './components/Lifecycle.vue'
+import CompositionAPI from './components/CompositionAPI.vue'
 
 const routes = [
   { path: '/', redirect: '/introduccion' },
@@ -22,6 +23,7 @@ const routes = [
   { path: '/estado', component: Estado },
   { path: '/computed', component: Computed },
   { path: '/lifecycle', component: Lifecycle },
+  { path: '/compositionAPI', component: CompositionAPI },
 ]
 
 const router = createRouter({
