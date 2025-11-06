@@ -15,6 +15,7 @@ import Routes from './components/Routes.vue'
 import Pinia from './components/Pinia.vue'
 import Apis from './components/Apis.vue'
 import Slots from './components/Slots.vue'
+import Optimizar from './components/Optimizar.vue'
 
 const routes = [
   { path: '/', redirect: '/introduccion' },
@@ -32,6 +33,7 @@ const routes = [
   { path: '/pinia', component: Pinia },
   { path: '/apis', component: Apis },
   { path: '/slots', component: Slots },
+  { path: '/optimizar', component: Optimizar },
 ]
 
 const router = createRouter({
