@@ -13,19 +13,21 @@ Este proyecto se utiliza como base de estudio y experimentación con **Vue 3 + V
 
 Este proyecto está enfocado en reforzar conocimientos esenciales de **Vue 3 + Vite**, comprendiendo su arquitectura basada en componentes, flujo de datos reactivo y buenas prácticas mientras se construye una aplicación real.
 
-- **Introducción a Vue**: Estructura del proyecto, Vite, montaje de la app y filosofía del framework.
-- **Componentes**: Creación de componentes, comunicación entre componentes con **props** y **emits**, encapsulación de estilos (`scoped`) y organización por carpetas.
-- **Template Syntax y Data Binding**: Interpolación, property binding, event binding y binding bidireccional con `v-model`.
-- **Directivas**: Uso de `v-if`, `v-for`, `v-show`, clases dinámicas, estilos dinámicos y creación de directivas personalizadas.
-- **Computed & Watchers**: Propiedades computadas, watchers para observar cambios de estado y lógica reactiva avanzada.
-- **Props y Eventos**: Paso de datos desde padres a hijos, emisión de eventos y comunicación descendente/ascendente.
-- **Composition API**: Uso de `setup()`, `ref`, `reactive`, `toRefs` y composición de lógica reutilizable.
-- **Composables**: Funciones reutilizables para lógica compartida entre componentes.
-- **Consumo de APIs / Axios**: Peticiones GET/POST, manejo de errores, tipado de respuestas y centralización de llamadas a APIs.
-- **Slots & Scoped Slots**: Personalización de componentes hijos desde el padre, contenido dinámico y composición flexible.
-- **Router**: Configuración de rutas, rutas dinámicas, navegación, lazy loading y protección de rutas.
-- **Estado Global con Pinia**: Manejo de estado compartido entre componentes, stores y patrones recomendados.
+- **Introducción**: Estructura del proyecto, Vite, montaje de la app y filosofía del framework.
+- **Instalación + Vite**: Configuración inicial del proyecto y dependencias.
+- **Template Syntax**: Sintaxis de templates, interpolación, property binding, event binding y `v-model`.
+- **Componentes**: Creación de componentes, comunicación con **props** y **emits**, encapsulación de estilos (`scoped`) y organización por carpetas.
+- **Props**: Paso de datos desde padres a hijos.
+- **Emit / Eventos**: Emisión de eventos y comunicación de hijos a padres.
+- **Estado Reactivo**: Uso de `ref` y `reactive` para manejar datos reactivos en los componentes.
+- **Computed + Watch**: Propiedades computadas, watchers para observar cambios de estado y lógica reactiva avanzada.
 - **Ciclo de Vida**: Hooks del ciclo de vida (`onMounted`, `onUpdated`, `onUnmounted`, etc.).
+- **Composition API**: Uso de `setup()`, `toRefs`, `reactive` y composición de lógica reutilizable.
+- **Composables (Reutilizar lógica)**: Funciones reutilizables para lógica compartida entre componentes.
+- **Consumo de APIs / Axios**: Peticiones HTTP, manejo de errores y centralización de llamadas a APIs.
+- **Slots & Scoped Slots**: Personalización de componentes hijos desde el padre, contenido dinámico y composición flexible.
+- **Router**: Configuración de rutas, rutas dinámicas, navegación, lazy loading y guards.
+- **Pinia (Estado Global)**: Manejo de estado compartido entre componentes, stores y patrones recomendados.
 - **Optimización & Buenas Prácticas**: Lazy loading de componentes, modularización, separación de responsabilidades y performance.
 
 ## Instalación
