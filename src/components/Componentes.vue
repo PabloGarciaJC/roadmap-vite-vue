@@ -5,7 +5,7 @@
     <div class="header">
       <h1 class="title">
         <font-awesome-icon :icon="['fas', 'puzzle-piece']" class="icon" />
-         Componentes en Vue
+         Componentes
       </h1>
     </div>
 

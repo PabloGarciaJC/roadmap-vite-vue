@@ -5,7 +5,7 @@
     <div class="header">
       <h1 class="title">
         <font-awesome-icon :icon="['fas', 'brain']" class="icon"/> 
-        Computed + Watch en Vue
+        Computed + Watch
       </h1>
     </div>
 

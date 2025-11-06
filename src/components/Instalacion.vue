@@ -3,7 +3,7 @@
     <div class="header">
       <h1 class="title">
         <font-awesome-icon :icon="['fas', 'download']" class="icon" />
-        Instalación de Vue con Vite
+        Instalación
       </h1>
     </div>
 

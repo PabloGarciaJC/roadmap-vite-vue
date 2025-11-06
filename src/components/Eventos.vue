@@ -5,7 +5,7 @@
     <div class="header">
       <h1 class="title">
         <font-awesome-icon :icon="['fas', 'bullseye']" class="icon"/> 
-        Emit / Eventos en Vue
+        Emit / Eventos
       </h1>
     </div>
 

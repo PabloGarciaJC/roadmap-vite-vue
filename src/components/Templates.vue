@@ -4,7 +4,7 @@
     <div class="header">
       <h1 class="title">
         <font-awesome-icon :icon="['fas', 'code']" class="icon" />
-        Templates en Vue
+        Templates
       </h1>
     </div>
 

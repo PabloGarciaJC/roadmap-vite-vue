@@ -5,11 +5,9 @@
     <div class="header">
       <h1 class="title">
         <font-awesome-icon :icon="['fas', 'box']" class="icon" />
-        Props en Vue
+        Props
       </h1>
     </div>
-
-    
 
     <!-- Qué son las props -->
     <div class="card card-info">
