@@ -1,4 +1,4 @@
-# Roadmap Vue + Vite
+# Roadmap (Vue + Vite)
 
 Este proyecto se utiliza como base de estudio y experimentación con **Vue 3 + Vite**, con el objetivo de estructurar, optimizar y estandarizar buenas prácticas en aplicaciones frontend.
 
